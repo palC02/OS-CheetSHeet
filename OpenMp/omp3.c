@@ -2,7 +2,7 @@
 #include<omp.h>
 
 int main(){
-  #pragma omp sections
+  #pragma omp parallel sections
 {
   #pragma omp section
     printf("\nFirst %d",omp_get_thread_num());
